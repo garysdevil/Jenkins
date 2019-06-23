@@ -1,0 +1,16 @@
+version: '3.0'
+services:
+  jenkins:
+    user: root
+    container_name: jenkins
+    environment:
+     - TZ=Asia/Shanghai
+    restart: on-failure:10
+    build:
+      context: .
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/bin/docker:/usr/bin/docker
+      - ./plugins.sh:/usr/local/bin/plugins.sh
+    ports:
+      - 802:8080
