@@ -1,4 +1,6 @@
 
+## note: Host and Jenkins share docker
+
 ### 1.Beform docker-compose up(if you has installed docker-compose in host)
 ```
 cp /usr/local/bin/docker-compose ./
