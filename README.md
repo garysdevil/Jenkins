@@ -15,7 +15,8 @@ cat /var/jenkins_home/secrets/initialAdminPassword
 2. click Manage Plugins 
 3. download "github integration"
 
-## you update Jenkins port by the following steps
+## Others(Unnessary)
+#### You can update Jenkins port by the following steps
 ```
 vi /etc/sysconfig/jenkins
 sudo service jenkins restart
